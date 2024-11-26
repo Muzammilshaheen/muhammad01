@@ -3,17 +3,18 @@
 import { motion } from "framer-motion";
 import { HeroHighlight, Highlight } from "./ui/hero-highlight";
 import React from "react";
-import { Spotlight } from "../ui/spotlight";
+import { Spotlight } from "./ui/spotlight";
  
 
 function HeroSection() {
   return (
     <div>
-      <HeroHighlight>
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
-        fill="black"
+        fill="white"
       />
+      <HeroHighlight>
+      
         <motion.h1
           initial={{
             opacity: 0,
@@ -27,12 +28,13 @@ function HeroSection() {
             duration: 0.5,
             ease: [0.4, 0.0, 0.2, 1],
           }}
-          className="text-2xl px-4 md:text-4xl lg:text-5xl font-bold text-neutral-700 dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
+          className="text-1xl px-4 md:text-2xl lg:text-2xl font-bold text-white dark:text-white max-w-4xl leading-relaxed lg:leading-snug text-center mx-auto"
         >
-          With insomnia, nothing&apos;s real. Everything is far away. Everything
-          is a{" "}
-          <Highlight className="text-black dark:text-white">
-            copy, of a copy, of a copy.
+         <p className="gap-2 text-lg mb-10"> I seems like you're mentioning Muzammil and discapion. Could you clarify your request or provide more details about what you're looking for? Are you asking for a description of 
+          someone named Muzammil, or is this about something else.<br/></p>
+          
+          <Highlight className="text-red-800 dark:text-black text-4xl">
+           Muzammil Shaheen
           </Highlight>
         </motion.h1>
       </HeroHighlight>
