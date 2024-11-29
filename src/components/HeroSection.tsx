@@ -10,7 +10,11 @@ function HeroSection() {
   return (
     <div>
       <Spotlight
-        className="-top-40 left-0 md:left-60 md:-top-20"
+        className="top-40 left-0 md:left-60 md:top-20"
+        fill="white"
+      />
+      <Spotlight
+        className="top-40 right-0 md:right-60 md:top-20"
         fill="white"
       />
       <HeroHighlight>
