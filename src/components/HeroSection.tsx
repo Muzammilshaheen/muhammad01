@@ -39,6 +39,7 @@ function HeroSection() {
           </Highlight>
         </motion.h1>
       </HeroHighlight>
+      <div className="absolute inset-auto z-40 h-44 w-full bg-gradient-to-b from-slate-800 to-transparent"></div>
     </div>
   );
 }

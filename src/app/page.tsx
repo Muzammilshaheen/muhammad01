@@ -1,11 +1,12 @@
+"Use client"
 import HeroSection from "@/components/HeroSection";
-import { main } from "framer-motion/client";
-import Image from "next/image";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
    <main>
-    <HeroSection/>
+    <HeroSection />
+    <VideoSection/>
    </main>
   );
 }
