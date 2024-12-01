@@ -18,7 +18,7 @@ function videoSection () {
     <>
   
  <div className="flex flex-col overflow-hidden bg-black">
- <div className="absolute inset-auto z-40 h-44 w-full bg-gradient-to-t from-black to-transparent mt-2"></div>
+ <div className="absolute inset-auto z-40 h-44 w-full bg-gradient-to-t from-black to-transparent mt-[11rem]"></div>
 
  <Vortex
         backgroundColor="black"
@@ -50,7 +50,44 @@ function videoSection () {
         </div>
       </ContainerScroll> 
       </Vortex>
-      
+      <div>
+  <h1 className="text-4xl font-bold text-center mb-11 text-white"> 
+    YouTube Video 
+  </h1>
+  <h2 className="text-2xl font-semibold mb-2 text-white ml-10">Description</h2>
+  <p className="text-base text-gray-700 mb-4 ml-10">
+    Struggling to save money? In this video, I'll walk you through 7<br/>
+     simple yet effective strategies to build your savings without feeling deprived.<br/> 
+     Whether you're saving for a vacation, a new car, or just want financial peace<br/> 
+     of mind, these tips will help you reach your goals faster!
+  </p>
+  <p className="text-base text-gray-700 mb-4 ml-10">
+    💬 Have a question? Drop it in the comments below! <br />
+    ✅ Subscribe for more money-saving advice:{" "}
+    <a 
+      href="https://www.youtube.com/channel/YOUR_CHANNEL_LINK" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-blue-500 underline ml-10"
+    >
+      next.js
+    </a>
+    <br />
+    📱 Follow me on Instagram for daily tips:{" "}
+    <a 
+      href="https://www.instagram.com/muzammil" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      className="text-blue-500 underline ml-10"
+    >
+      Your Instagram
+    </a>
+  </p>
+  <p className="text-sm text-gray-500 mb-11 ml-10">
+    #MoneySaving #PersonalFinance #FinancialFreedom
+  </p>
+</div>
+
       
     </div>
     </>
