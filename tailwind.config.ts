@@ -37,7 +37,6 @@ const config: Config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
   ],
-  
   prefix: "",
   theme: {
     container: {
@@ -47,8 +46,7 @@ const config: Config = {
         "2xl": "1400px",
       },
     },
-    extend: {
-    },
+    extend: {},
     animation: {
       spotlight: "spotlight 2s ease .75s 1 forwards",
     },
@@ -66,7 +64,6 @@ const config: Config = {
     },
   },
   plugins: [
-    require("tailwindcss-animate"),
     addVariablesForColors,
     function ({ matchUtilities, theme }: any) {
       matchUtilities(
