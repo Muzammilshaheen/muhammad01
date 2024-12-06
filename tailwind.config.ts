@@ -1,9 +1,6 @@
 import type { Config } from "tailwindcss";
 
-function svgToDataUri(svg: string) {
-  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
-}
-
+// Flattens nested color palettes into a single-level object
 function flattenColorPalette(colors: any) {
   const result: Record<string, string> = {};
   for (const [key, value] of Object.entries(colors)) {
@@ -18,6 +15,12 @@ function flattenColorPalette(colors: any) {
   return result;
 }
 
+// Converts inline SVG to a data URI
+function svgToDataUri(svg: string) {
+  return `data:image/svg+xml,${encodeURIComponent(svg)}`;
+}
+
+// Adds Tailwind colors as CSS variables
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
@@ -29,6 +32,7 @@ function addVariablesForColors({ addBase, theme }: any) {
   });
 }
 
+// Tailwind configuration
 const config: Config = {
   darkMode: ["class"],
   content: [
@@ -70,7 +74,7 @@ const config: Config = {
         {
           "bg-dot-thick": (value: any) => ({
             backgroundImage: `url("${svgToDataUri(
-              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="2.5"></circle></svg>`
+              `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" cx="10" cy="10" r="2.5"></circle></svg>`
             )}")`,
           }),
         },
